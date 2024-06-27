@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Portfolio Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Faculty Portfolio Generator</h1>
+        <form id="portfolioForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="experience">Work/Teaching Experience:</label>
+            <textarea id="experience" name="experience" required></textarea>
+
+            <label for="specialization">Specialization in Teaching:</label>
+            <input type="text" id="specialization" name="specialization" required>
+
+            <label for="image">Image URL:</label>
+            <input type="url" id="image" name="image" required>
+
+            <label for="achievements">Achievements:</label>
+            <textarea id="achievements" name="achievements" required></textarea>
+
+            <label for="articles">Published Articles:</label>
+            <textarea id="articles" name="articles" required></textarea>
+
+            <label for="books">Books:</label>
+            <textarea id="books" name="books" required></textarea>
+
+            <label for="certificates">Certificates (Image URL, Link, Title):</label>
+            <textarea id="certificates" name="certificates" required></textarea>
+
+            <label for="contact">Contact Details:</label>
+            <input type="phone:" id="contact" name="contact" required>
+            <input type="email" id="contact" name="contact" required>
+
+            <label for="linkedin">LinkedIn URL:</label>
+            <input type="url" id="linkedin" name="linkedin" required>
+
+            <label for="github">GitHub URL:</label>
+            <input type="url" id="github" name="github" required>
+
+            <label for="youtube">YouTube URL:</label>
+            <input type="url" id="youtube" name="youtube" required>
+
+            <button type="button" onclick="generatePortfolio()">Create Portfolio</button>
+        </form>
+<br>
+<hr>
+        
+        <div id="portfolioOutput"></div>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
