@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Input Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Portfolio</h1>
+        <form id="portfolioForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="degree">Degree</label>
+                <input type="text" id="degree" name="degree" required>
+            </div>
+            <div class="form-group">
+                <label for="qualification">Qualification</label>
+                <textarea id="qualification" name="qualification" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="languages">Languages</label>
+                <input type="text" id="languages" name="languages" required>
+            </div>
+            <div class="form-group">
+                <label for="profilePicture">Profile Picture</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="certificates">Certificates (select multiple)</label>
+                <input type="file" id="certificates" name="certificates" accept="image/*" multiple required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone   ">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Generate Portfolio</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
